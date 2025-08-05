@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LCU Quiz Game</title>
+</head>
+<body>
+
+<h2>🎬 LCU Quiz</h2>
+<p>Who is the director of the movie "Vikram"?</p>
+
+<!-- Quiz options -->
+<button onclick="checkAnswer('Lokesh')">Lokesh</button>
+<button onclick="checkAnswer('Rajamouli')">Rajamouli</button>
+<button onclick="checkAnswer('Shankar')">Shankar</button>
+
+<!-- Result output -->
+<p id="result"></p>
+
+<script>
+// ✅ Function to check answer
+function checkAnswer(selected) {
+  const correct = "Lokesh";
+
+  if (selected === correct) {
+    showResult("✅ Correct! Lokesh Kanagaraj is the director.");
+  } else {
+    showResult("❌ Wrong! Try again.");
+  }
+}
+
+// ✅ Function to show result message
+function showResult(message) {
+  document.getElementById("result").innerText = message;
+}
+</script>
+
+</body>
+</html>

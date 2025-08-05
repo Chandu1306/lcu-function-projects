@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emoji Mood Picker</title>
+</head>
+<body>
+
+<h2>💬 How are you feeling today?</h2>
+
+<button onclick="setMood('Happy 😊')">Happy</button>
+<button onclick="setMood('Sad 😢')">Sad</button>
+<button onclick="setMood('Angry 😡')">Angry</button>
+<button onclick="setMood('Excited 🤩')">Excited</button>
+<button onclick="setMood('Sleepy 😴')">Sleepy</button>
+
+<h3>Your Mood: <span id="moodOutput">🤔</span></h3>
+
+<script>
+function setMood(moodText) {
+  document.getElementById("moodOutput").innerText = moodText;
+}
+</script>
+
+</body>
+</html>

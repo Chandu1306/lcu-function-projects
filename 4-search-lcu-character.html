@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LCU Character Search</title>
+</head>
+<body>
+
+<h2>🔍 Search LCU Character</h2>
+
+<input type="text" id="searchInput" placeholder="Enter character name">
+<button onclick="searchLCU()">Search</button>
+
+<p id="searchResult"></p>
+
+<script>
+const lcuChars = ["Leo", "Vikram", "Dilli", "Rolex", "Amar", "Sandhanam"];
+
+function searchLCU() {
+  const input = document.getElementById("searchInput").value.trim();
+  const formatted = input.charAt(0).toUpperCase() + input.slice(1).toLowerCase();
+
+  if (lcuChars.includes(formatted)) {
+    document.getElementById("searchResult").innerText = `✅ ${formatted} is in LCU!`;
+  } else {
+    document.getElementById("searchResult").innerText = `❌ ${formatted} not found in LCU.`;
+  }
+}
+</script>
+
+</body>
+</html>
