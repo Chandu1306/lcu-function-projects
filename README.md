@@ -29,4 +29,4 @@ This repository contains fun mini projects using **JavaScript functions**, inspi
 If you host this using GitHub Pages, you can add:
 
 ```markdown
-[Click here to view live demo](https://chandu1306.github.io/lcu-function-projects/)
+[Click here to view live demo](https://chandu-op.github.io/lcu-function-projects/)
